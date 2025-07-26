@@ -10,3 +10,32 @@
     "wdth" 100;
 }
 
+/* media quairy */
+
+.sm{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5px;
+    text-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #E95A08 ;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn-primary:hover {
+    background-color: #834115;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(78, 71, 255, 0.3);
+    border-radius: 5px;
+}
+
+
