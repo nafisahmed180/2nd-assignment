@@ -2,25 +2,25 @@
 
 
 .noto-serif-1 {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 /* media quairy */
 
-.sm{
+.sm {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 5px;
     text-wrap: wrap;
 }
 
 .btn-primary {
-    background-color: #E95A08 ;
+    background-color: #E95A08;
     font-weight: bold;
     font-size: 16px;
     color: white;
@@ -39,3 +39,27 @@
 }
 
 
+
+.form input {
+    width: 644px;
+    height: 50px;
+    background-color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: 0;
+
+
+}
+
+/* small device */
+@media screen and (max-width:640px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

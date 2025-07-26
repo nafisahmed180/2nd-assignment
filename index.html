@@ -18,7 +18,7 @@
 
     <header>
 
-        <nav class=" flex items-center justify-between max-w-6xl mt-5 mx-auto p-3 ">
+        <nav class="navigation flex items-center justify-between max-w-6xl mt-5 mx-auto p-3 ">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
@@ -57,14 +57,15 @@
         <!-- Plants Section -->
 
 
-        <section class="Plants noto-serif-1 max-w-6xl mx-auto">
-            <div class="justify-items-center px-32 pt-32 ">
-                <h2 class="font-bold text-[50px] text-black"><span class="text-amber-600">OUR</span> PLANTS</h2>
+        <section class="Plants noto-serif-1 max-w-6xl mx-auto ">
+            <div class="justify-items-center px-32 pt-32 max-sm:text-wrap">
+                <h2 class="font-bold text-[50px] text-black max-sm:decoration-auto"><span
+                        class="text-amber-600">OUR</span> PLANTS</h2>
                 <p class="text-gray-500 text-[22px] mt-4 mb-12 block text-center">"Savor the scent, embrace the bloom —
                     from classic roses to rare delights, our
                     flowers whisper beauty in every room."</p>
             </div>
-            <div class="cards grid grid-cols-4 max-w-7xl mx-auto p-5 ">
+            <div class="cards grid grid-cols-4 max-w-7xl mx-auto p-5  ">
                 <div class="w-72 text-center p-4">
                     <img class="w-7xl" src="assets/sample-flower-image.png" alt="">
                     <h5 class="text-[22px] text-black pt-4">Lily Blossom</h5>
@@ -133,36 +134,91 @@
             </div>
         </section>
 
-        <section class="Description flex max-w-6xl mt-30 mx-auto gap-16 my-6" >
-            <div class="image relative flex-1">
-                <img class="overflow-hidden relative" src="assets/flower-store.png" alt="">
-                <img class="trusted-badge drop-shadow-gray-600 absolute -top-30 -right-25 w-[288px] z-20" src="assets/trusted-badge.png" alt="">
+        <!-- Description Section -->
+
+        <section class="Description flex max-w-6xl mt-30 mx-auto gap-16 my-6 max-sm:flex-col p-3">
+            <div class="image relative flex-1 ">
+                <img class="overflow-hidden relative w-full sm:w-auto" src="assets/flower-store.png" alt="">
+                <img class="trusted-badge drop-shadow-gray-600 absolute -top-30 -right-25 w-[288px] z-20 max-sm:hidden"
+                    src="assets/trusted-badge.png" alt="">
 
             </div>
-            <div class="flex-1 items-center justify-center ">
+            <div class="flex-1 items-center justify-center max-sm:flex-col">
                 <h3 class="text-black font-bold text-5xl text-wrap pr-20 py-5">Flower & Plants Lover</h3>
 
-                <ul class="list-disc py-2 space-y-5"> 
+                <ul class="list-disc py-2 space-y-5">
 
                     <li class="text-gray-500 text-[22px]">
                         <span class="text-black font-bold ">A Connection to Nature</span><br>
                         Flowers and organic plants bring a soulful connection to the earth—reminding us to slow down,
-                        breathe deeply, and cherish life's natural beauty.</li>
+                        breathe deeply, and cherish life's natural beauty.
+                    </li>
 
                     <li class="text-gray-500 text-[22px]">
                         <span class="text-black font-bold">Pure Love, Pure Growth</span><br>
                         Grown organically, these plants thrive without harmful chemicals—just sunlight, water, and
-                        care—making every leaf and petal a reflection of gentle love.</li>
+                        care—making every leaf and petal a reflection of gentle love.
+                    </li>
 
 
                     <li class="text-gray-500 text-[22px]">
                         <span class="text-black font-bold"> Wellness in Every Bloom</span><br>
                         Surrounding yourself with vibrant, chemical-free flowers and plants uplifts your mood, purifies
-                        your space, and fills your heart with calm, green joy.</li>
+                        your space, and fills your heart with calm, green joy.
+                    </li>
                 </ul>
             </div>
-        </section>
+        </section>]
+
+        <!-- join Section -->
+
+        <section
+            class="join mx-auto text-center w-full sm:w-[1440px] h-auto sm:h-[533px] px-4 sm:px-[305px] py-16 sm:py-48 mt-16 sm:mt-32 bg-cover bg-center"
+            style="background-image: url(./assets/news-letter-bg.png);">
+
+            <div>
+                <h3 class="noto-serif-1 text-[30px] sm:text-[50px] font-bold text-white p-4 sm:p-6">
+                    Join the colorful Bunch
+                </h3>
+            </div>
+
+            <div class="form flex w-full mx-auto">
+                <input type="email" placeholder="Write email" class="flex-1 min-w-0 px-4 py-3 text-black">
+                <button class="btn-primary  w-[186px] h-[50px] whitespace-nowrap">
+                    Subscribe
+                </button>
+
+            </section>
+
     </main>
+    <footer class="footer-section py-12 w-[1440px] h-[350px] mx-auto ">
+        <section class=" grid grid-cols-3 px-40 gap-[110px]">
+            <div class="ending-description max-sm:grid-cols-1">
+                <img src="assets/logo.png" alt="">
+                <p class="py-2 text-[22px]">"Where every petal whispers love, and every bouquet blooms with joy — step
+                    into our
+                    garden, and let beauty blossom in your life."</p>
+            </div>
+            <div class="Links grid grid-cols-2 gap-x-16  py-0 gap-[26px] overflow-hidden max-sm:grid-cols-1">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Blog</a>
+                <a href="">FAQ</a>
+                <a href="">Contact Us</a>
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Help Center</a>
+            </div>
+            <div class="icon flex w-[216px] h-9 space-x-5 pl-[110px]">
+                <img src="assets/icon-facebook.png" alt="">
+                <img src="assets/icon-linkedin.png" alt="">
+                <img src="assets/icon-twitter.png" alt="">
+                <img src="assets/icon-youtube.png" alt="">
+            </div>
+        </section>
+    </footer>
 
 </body>
 
